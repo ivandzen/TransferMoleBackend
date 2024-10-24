@@ -1,0 +1,5 @@
+venv/*
+.env
+Dockerfile
+run_local.sh
+*/__pycache__/*

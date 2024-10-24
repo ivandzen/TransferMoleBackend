@@ -1,0 +1,33 @@
+class APIError(Exception):
+    INTERNAL = 0
+    CREATOR_REGISTERED = 3
+    PERSONAL_INFO = 5
+    STRIPE_NOT_SUPPORTED = 8
+    CREATOR_SUBMITTED_FOR_VERIFICATION = 11
+    CREATOR_COUNTRY_NOT_SELECTED = 13
+    WRONG_UUID = 14
+    INSTAGRAM_ERROR = 16
+    BANK_ACCOUNT_INFO = 17
+    STRIPE = 18
+    INVALID_TOKEN = 19
+    CHANNEL_NOT_BELONG_TO_CREATOR = 20
+    PAYMENT = 21
+    MESSAGE = 22
+    WRONG_TXID = 24
+    CREATE_PAYOUT_CHANNEL_ERROR = 27
+    GET_PAYOUT_CHANNEL = 28
+    WRONG_PARAMETERS = 29
+    ACCOUNT = 30
+    UNKNOWN_CURRENCY = 31
+    WRONG_WALLET_ADDR = 32
+    TRX_CHECK_ERROR = 33
+    OBJECT_NOT_FOUND = 35
+    ACCESS_ERROR = 36
+    FORM_DATA = 37
+    LOGIN_ERROR = 38
+    WRONG_PASSPHRASE = 39
+
+    def __init__(self, code: int, message: str | None = None) -> None:
+        super().__init__(message)
+        self.code = code
+        self.message = message

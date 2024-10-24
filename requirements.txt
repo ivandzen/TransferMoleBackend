@@ -1,0 +1,15 @@
+fastapi[all]==0.110.0
+uvicorn[standard]==0.28.1
+requests==2.31.0
+psycopg2-binary==2.9.9
+deepdiff==6.7.1
+base58==2.1.1
+stripe==8.7.0
+web3==6.11.1
+pyjwt[crypto]==2.8.0
+redis[hiredis]==5.0.3
+prometheus-fastapi-instrumentator==7.0.0
+cryptography==42.0.5
+cachetools==5.3.3
+python-telegram-bot==21.4
+locust==2.31.6

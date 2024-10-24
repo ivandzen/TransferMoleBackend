@@ -1,0 +1,10 @@
+venv*
+*/venv/*
+.idea/*
+.env
+.env-prod
+.env-test
+test-*
+*/__pycache__/*
+*.pyc
+
